@@ -1,5 +1,5 @@
 {
-  "name": "koa-file-server",
+  "name": "koa2-file-server",
   "version": "0.0.1",
   "description": "file serving middleware for koa2",
   "main": "index.js",

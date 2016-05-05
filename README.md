@@ -121,7 +121,7 @@ imageView/auto-orient
 ## 缓存处理
 为了减少磁盘io，对文件进行了缓存。如果文件在缓存有效期内被改变，只能清除缓存，否则请求没有任何改变。
 
-[staticCache API](https://github.com/isaacs/node-lru-cache#api) 缓存key: **filePath** 和 **filePath__string**
+[staticCache API](https://github.com/isaacs/node-lru-cache#api) 缓存key: **filePath**
 ```javascript
 "use strict";
 

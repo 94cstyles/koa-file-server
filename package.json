@@ -1,6 +1,6 @@
 {
   "name": "koa2-file-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "file serving middleware for koa2",
   "main": "index.js",
   "repository": {
@@ -8,10 +8,11 @@
     "url": "git+https://github.com/TOP-Chao/koa-file-server.git"
   },
   "keywords": [
-    "file server",
-    "static server",
-    "image server",
-    "koa2 middleware"
+    "koa",
+    "file",
+    "server",
+    "image",
+    "static"
   ],
   "author": "",
   "license": "ISC",

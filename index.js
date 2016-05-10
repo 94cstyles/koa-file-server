@@ -1,16 +1,13 @@
 "use strict";
 
-import {_extend} from 'util';
-import parseUrl from './lib/parseUrl';
-import validate from './lib/validate';
-import sendFile, {cache} from './lib/sendFile';
-import _debug from 'debug';
+const _extend = require('util')._extend;
+const parseUrl = require('./lib/parseUrl');
+const validate = require('./lib/validate');
+const sendFile = require('./lib/sendFile');
+const cache = sendFile.cache;
+const debug = require('debug')('koa-file-server');
 
-const debug = _debug('koa-file-server');
-
-export var staticCache = cache;
-
-export default (root, options) => {
+module.exports = (root, options) => {
     if (typeof(root) === "object") {
         options = root;
         root = null;
@@ -77,4 +74,6 @@ export default (root, options) => {
             ctx.body = request.body.error;
         }
     }
-}
+};
+
+module.exports.staticCache = cache;

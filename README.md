@@ -1,21 +1,10 @@
 # 静态文件服务 for koa2
-静态文件服务，除却基本文件服务，增加了图片处理，请求合并，文本文件gzip压缩等功能。因为使用了 async，所以需要 [babel](https://babeljs.io/) 来运行。
+静态文件服务，除却基本文件服务，增加了图片处理(非gif)，请求合并，文本文件gzip压缩等功能。
 
 ## 安装使用
 安装图片处理软件 [ImageMagick](http://www.imagemagick.org/script/index.php)
 
 `npm install koa2-file-server --save`
-```javascript
-//babel.app.js
-require("babel-core/register")({
-    presets: ['es2015-node5', 'stage-3'],
-    ignore: function (fileName) {
-        return /\/node_modules\//.test(fileName) && !/\/node_modules\/koa2-file-server\//.test(fileName);
-    }
-});
-require('./app.js');
-```
-
 ```javascript
 //app.js
 "use strict";

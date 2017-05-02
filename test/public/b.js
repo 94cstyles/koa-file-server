@@ -1,3 +1,3 @@
 (function () {
-    var b = 'cstyles';
-})();
+  var b = 'cstyles'
+})()
